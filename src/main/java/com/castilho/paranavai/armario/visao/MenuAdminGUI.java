@@ -88,13 +88,18 @@ public class MenuAdminGUI extends javax.swing.JFrame {
 
         adminMenuRelatorios.setText("Relatórios");
 
-        adminRelatoriosEmprestimos.setText("Relatórios de empréstimos");
+        adminRelatoriosEmprestimos.setText("Relatório de empréstimos");
         adminMenuRelatorios.add(adminRelatoriosEmprestimos);
 
-        adminRelatoriosDevolucoes.setText("Relatórios de devoluções");
+        adminRelatoriosDevolucoes.setText("Relatório de devoluções");
         adminMenuRelatorios.add(adminRelatoriosDevolucoes);
 
-        adminRelatoriosArmarios.setText("Relatórios de armários");
+        adminRelatoriosArmarios.setText("Relatório de armários");
+        adminRelatoriosArmarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminRelatoriosArmariosActionPerformed(evt);
+            }
+        });
         adminMenuRelatorios.add(adminRelatoriosArmarios);
 
         adminBarraMenu.add(adminMenuRelatorios);
@@ -133,6 +138,10 @@ public class MenuAdminGUI extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_adminMinhaContaSairActionPerformed
+
+    private void adminRelatoriosArmariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminRelatoriosArmariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_adminRelatoriosArmariosActionPerformed
 
     /**
      * @param args the command line arguments

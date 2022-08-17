@@ -31,18 +31,21 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="adminRelatoriosEmprestimos">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios de empr&#xe9;stimos"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de empr&#xe9;stimos"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="adminRelatoriosDevolucoes">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios de devolu&#xe7;&#xf5;es"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de devolu&#xe7;&#xf5;es"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="adminRelatoriosArmarios">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Relat&#xf3;rios de arm&#xe1;rios"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de arm&#xe1;rios"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adminRelatoriosArmariosActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
