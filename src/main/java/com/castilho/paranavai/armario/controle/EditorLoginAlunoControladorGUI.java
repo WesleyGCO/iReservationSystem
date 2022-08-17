@@ -4,24 +4,28 @@
  */
 package com.castilho.paranavai.armario.controle;
 
+import com.castilho.paranavai.armario.visao.EditorLoginAlunoGUI;
 import com.castilho.paranavai.armario.visao.EditorPrincipalGUI;
-import com.castilho.paranavai.armario.visao.IndexGUI;
+import com.castilho.paranavai.armario.visao.MenuAlunoGUI;
 
 /**
  *
  * @author Wesley
  */
-public class IndexControlador {
-    private final IndexGUI visao;
+public class EditorLoginAlunoControladorGUI {
+    private final EditorLoginAlunoGUI visao;
     
-    public IndexControlador(IndexGUI visao){
+    public EditorLoginAlunoControladorGUI(EditorLoginAlunoGUI visao){
         this.visao = visao;
     }
     
-    public void navegarParaEditorPrincipal(){
+    public void navegarParaMenuAluno(){
+        MenuAlunoGUI abrirMenuAluno = new MenuAlunoGUI();
+        abrirMenuAluno.setVisible(true);
+    }
+    
+    public void navegarParaPrincipal(){
         EditorPrincipalGUI abrirPrincipal = new EditorPrincipalGUI();
         abrirPrincipal.setVisible(true);
     }
-    
-    
 }

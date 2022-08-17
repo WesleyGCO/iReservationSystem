@@ -4,7 +4,7 @@
  */
 package com.castilho.paranavai.armario.visao;
 
-import com.castilho.paranavai.armario.controle.EditorLoginAdminControlador;
+import com.castilho.paranavai.armario.controle.EditorLoginAdminControladorGUI;
 import com.castilho.paranavai.armario.controle.LoginControlador;
 import javax.swing.JOptionPane;
 
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class EditorLoginAdminGUI extends javax.swing.JFrame {
 
-    private final EditorLoginAdminControlador controlador;
+    private final EditorLoginAdminControladorGUI controlador;
     
     /**
      * Creates new form EditorLoginAdminGUI
@@ -22,7 +22,7 @@ public class EditorLoginAdminGUI extends javax.swing.JFrame {
     public EditorLoginAdminGUI() {
         initComponents();
         setTitle("Login do Administrador");
-        this.controlador = new EditorLoginAdminControlador(this);
+        this.controlador = new EditorLoginAdminControladorGUI(this);
     }
 
     /**

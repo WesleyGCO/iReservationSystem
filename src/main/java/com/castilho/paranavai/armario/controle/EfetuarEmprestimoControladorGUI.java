@@ -11,10 +11,10 @@ import com.castilho.paranavai.armario.visao.MenuAlunoGUI;
  *
  * @author Wesley
  */
-public class EfetuarEmprestimoControlador {
+public class EfetuarEmprestimoControladorGUI {
     private final EfetuarEmprestimoGUI visao;
     
-    public EfetuarEmprestimoControlador(EfetuarEmprestimoGUI visao){
+    public EfetuarEmprestimoControladorGUI(EfetuarEmprestimoGUI visao){
         this.visao = visao;
     }
     

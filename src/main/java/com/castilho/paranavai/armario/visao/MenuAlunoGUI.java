@@ -4,7 +4,7 @@
  */
 package com.castilho.paranavai.armario.visao;
 
-import com.castilho.paranavai.armario.controle.MenuAlunoControlador;
+import com.castilho.paranavai.armario.controle.MenuAlunoControladorGUI;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -17,7 +17,7 @@ import javax.swing.JPanel;
  */
 public class MenuAlunoGUI extends javax.swing.JFrame {
 
-    private final MenuAlunoControlador controlador;     
+    private final MenuAlunoControladorGUI controlador;     
     
     /**
      * Creates new form MenuAluno
@@ -26,7 +26,7 @@ public class MenuAlunoGUI extends javax.swing.JFrame {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
         setTitle("iReservationSystem");
-        this.controlador = new MenuAlunoControlador(this);
+        this.controlador = new MenuAlunoControladorGUI(this);
         
         //telaNew = new FundoTelaNew("/assets/biblioteca.jpg");
         //getContentPane().add(telaNew);

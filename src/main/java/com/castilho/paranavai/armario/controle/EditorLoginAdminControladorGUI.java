@@ -12,10 +12,10 @@ import com.castilho.paranavai.armario.visao.MenuAdminGUI;
  *
  * @author Wesley
  */
-public class EditorLoginAdminControlador {
+public class EditorLoginAdminControladorGUI {
     private final EditorLoginAdminGUI visao;
     
-    public EditorLoginAdminControlador(EditorLoginAdminGUI visao){
+    public EditorLoginAdminControladorGUI(EditorLoginAdminGUI visao){
         this.visao = visao;
     }
     

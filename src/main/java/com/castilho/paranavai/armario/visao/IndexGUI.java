@@ -6,7 +6,7 @@ package com.castilho.paranavai.armario.visao;
 
 //Importações
 
-import com.castilho.paranavai.armario.controle.IndexControlador;
+import com.castilho.paranavai.armario.controle.IndexControladorGUI;
 import com.castilho.paranavai.armario.utils.FundoTelaNew;
 import com.castilho.paranavai.armario.utils.FundoTelaOld;
 
@@ -23,7 +23,7 @@ public class IndexGUI extends javax.swing.JFrame {
     //FundoTelaOld telaOld;
     FundoTelaNew telaNew;
     
-    private final IndexControlador controlador;
+    private final IndexControladorGUI controlador;
     
     /**
      * Creates new form IndexGUI
@@ -33,7 +33,7 @@ public class IndexGUI extends javax.swing.JFrame {
         
         setExtendedState(MAXIMIZED_BOTH);
         setTitle("iReservationSystem");
-        this.controlador = new IndexControlador(this);
+        this.controlador = new IndexControladorGUI(this);
         //tela = new FundoTelaOld("assets\\biblioteca.jpg");
         
         

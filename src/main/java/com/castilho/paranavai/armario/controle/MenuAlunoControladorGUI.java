@@ -13,10 +13,10 @@ import com.castilho.paranavai.armario.visao.MenuAlunoGUI;
  *
  * @author Wesley
  */
-public class MenuAlunoControlador {
+public class MenuAlunoControladorGUI {
     private final MenuAlunoGUI visao;
     
-    public MenuAlunoControlador(MenuAlunoGUI visao){
+    public MenuAlunoControladorGUI(MenuAlunoGUI visao){
         this.visao = visao;
     }
     

@@ -4,7 +4,7 @@
  */
 package com.castilho.paranavai.armario.visao;
 
-import com.castilho.paranavai.armario.controle.EfetuarEmprestimoControlador;
+import com.castilho.paranavai.armario.controle.EfetuarEmprestimoControladorGUI;
 import static java.lang.reflect.Array.set;
 import javax.swing.JOptionPane;
 
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class EfetuarEmprestimoGUI extends javax.swing.JFrame {
 
-    private final EfetuarEmprestimoControlador controlador;
+    private final EfetuarEmprestimoControladorGUI controlador;
     
     /**
      * Creates new form EfetuarEmprestimoGUI
@@ -23,7 +23,7 @@ public class EfetuarEmprestimoGUI extends javax.swing.JFrame {
         initComponents();
         this.setResizable(false);
         setTitle("Efetuar empréstimo");
-        this.controlador = new EfetuarEmprestimoControlador(this);
+        this.controlador = new EfetuarEmprestimoControladorGUI(this);
     }
 
     /**

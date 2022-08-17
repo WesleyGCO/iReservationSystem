@@ -1,6 +1,6 @@
 package com.castilho.paranavai.armario.visao;
 
-import com.castilho.paranavai.armario.controle.EfetuarDevolucaoControlador;
+import com.castilho.paranavai.armario.controle.EfetuarDevolucaoControladorGUI;
 import javax.swing.JOptionPane;
 
 /*
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class EfetuarDevolucaoGUI extends javax.swing.JFrame {
 
-    private final EfetuarDevolucaoControlador controlador;
+    private final EfetuarDevolucaoControladorGUI controlador;
     
     /**
      * Creates new form EfetuarDevolucaoGUI
@@ -23,7 +23,7 @@ public class EfetuarDevolucaoGUI extends javax.swing.JFrame {
         initComponents();
         this.setResizable(false);
         setTitle("Efetuar devolução");
-        this.controlador = new EfetuarDevolucaoControlador(this);
+        this.controlador = new EfetuarDevolucaoControladorGUI(this);
     }
 
     /**

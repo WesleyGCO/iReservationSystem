@@ -4,7 +4,7 @@
  */
 package com.castilho.paranavai.armario.visao;
 
-import com.castilho.paranavai.armario.controle.EditorPrincipalControlador;
+import com.castilho.paranavai.armario.controle.EditorPrincipalControladorGUI;
 
 /**
  *
@@ -12,7 +12,7 @@ import com.castilho.paranavai.armario.controle.EditorPrincipalControlador;
  */
 public class EditorPrincipalGUI extends javax.swing.JFrame {
 
-    private final EditorPrincipalControlador controlador;
+    private final EditorPrincipalControladorGUI controlador;
 
     /**
      * Creates new form EditorPrincipalGUI
@@ -20,7 +20,7 @@ public class EditorPrincipalGUI extends javax.swing.JFrame {
     public EditorPrincipalGUI() {
         initComponents();
         setTitle("Escolha o seu usuário");
-        this.controlador = new EditorPrincipalControlador(this);
+        this.controlador = new EditorPrincipalControladorGUI(this);
     }
 
     /**

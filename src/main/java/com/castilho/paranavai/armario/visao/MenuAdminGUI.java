@@ -4,7 +4,7 @@
  */
 package com.castilho.paranavai.armario.visao;
 
-import com.castilho.paranavai.armario.controle.MenuAdminControlador;
+import com.castilho.paranavai.armario.controle.MenuAdminControladorGUI;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -16,7 +16,7 @@ import javax.swing.JPanel;
  */
 public class MenuAdminGUI extends javax.swing.JFrame {
 
-    private final MenuAdminControlador controlador;
+    private final MenuAdminControladorGUI controlador;
     
     /**
      * Creates new form MenuAdminGUI
@@ -26,7 +26,7 @@ public class MenuAdminGUI extends javax.swing.JFrame {
         setExtendedState(MAXIMIZED_BOTH);
         setTitle("iReservationSystem");
         
-        this.controlador = new MenuAdminControlador(this);
+        this.controlador = new MenuAdminControladorGUI(this);
     }
 
     /**

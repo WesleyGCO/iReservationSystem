@@ -10,10 +10,10 @@ import com.castilho.paranavai.armario.visao.EfetuarDevolucaoGUI;
  *
  * @author Wesley
  */
-public class EfetuarDevolucaoControlador {
+public class EfetuarDevolucaoControladorGUI {
     private final EfetuarDevolucaoGUI visao;
     
-    public EfetuarDevolucaoControlador(EfetuarDevolucaoGUI visao){
+    public EfetuarDevolucaoControladorGUI(EfetuarDevolucaoGUI visao){
         this.visao = visao;
     }
 }
