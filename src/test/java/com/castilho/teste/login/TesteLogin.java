@@ -13,7 +13,7 @@ import org.junit.Test;
  *
  * @author Wesley
  */
-public class TestaLogin {
+public class TesteLogin {
     private String emailInvalido = "olaolaola@ola.com";
     private String emailAdminValido = "admin@admin.com";
     private String emailAlunoValido = "user@user.com";
