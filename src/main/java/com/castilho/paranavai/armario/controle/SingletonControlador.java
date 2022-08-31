@@ -8,15 +8,16 @@ package com.castilho.paranavai.armario.controle;
  *
  * @author Wesley
  */
-public class Singleton {
-    private static Singleton singleton;
+public class SingletonControlador {
+    private static SingletonControlador singleton;
     
-    private Singleton(){
+    private SingletonControlador(){
     }
     
-    public static Singleton getInstance(){
+    public static SingletonControlador getInstance(){
+        
         if(singleton == null){
-            singleton = new Singleton();
+            singleton = new SingletonControlador();
         }
         
         return singleton;

@@ -16,8 +16,17 @@ import javax.persistence.Table;
  *
  * @author Wesley
  */
+
+@Entity
+@Table(name = "tb_localizacao")
 public class Localizacao {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_localizacao", unique = true, nullable = false, length = 100)
     private Integer localizacaoId;
+    
+    @Column(name = "nome", unique = true, nullable = false, length = 100)
     private String nome;
     
     public Localizacao(){
