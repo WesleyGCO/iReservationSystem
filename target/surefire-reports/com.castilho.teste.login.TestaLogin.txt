@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.castilho.teste.login.TestaLogin
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec
