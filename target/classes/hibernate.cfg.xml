@@ -6,7 +6,7 @@
         <property name="hibernate.connection.driver_class">
             com.mysql.jdbc.Driver
         </property>
-        <property name="hibernate.connection.password">r007-44R5t</property>
+        <property name="hibernate.connection.password"></property>
         <property name="hibernate.connection.url">
             jdbc:mysql://localhost/emprestimo
         </property>
@@ -17,16 +17,12 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">false</property>
         <property name="hbm2ddl.auto">update</property>
-        <!-- Classes que serão persistidas no tutorial -->
+        
         <mapping class="com.castilho.paranavai.armario.modelo.Armario" />
         <mapping class="com.castilho.paranavai.armario.modelo.Localizacao" />
-        <!-- Classes que serão persistidas em sala e/ou trabalho -->
-        <!--
         <mapping class="com.castilho.paranavai.armario.modelo.Bibliotecario" />
         <mapping class="com.castilho.paranavai.armario.modelo.Estudante" />
-        <mapping class="com.castilho.paranavai.armario.modelo.Localizacao" />
         <mapping class="com.castilho.paranavai.armario.modelo.Pessoa" />
         <mapping class="com.castilho.paranavai.armario.modelo.Reserva" />
-        -->
     </session-factory>
 </hibernate-configuration>
