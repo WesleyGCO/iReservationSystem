@@ -1,5 +1,6 @@
 com\castilho\paranavai\armario\visao\MenuAdminGUI$3.class
 com\castilho\paranavai\armario\visao\EditorLoginAdminGUI$2.class
+com\castilho\paranavai\armario\controle\SingletonControlador.class
 com\castilho\paranavai\armario\visao\EditorPrincipalGUI$1.class
 com\castilho\paranavai\armario\visao\EfetuarDevolucaoGUI$1.class
 com\castilho\paranavai\armario\controle\MenuAlunoControladorGUI.class
@@ -16,6 +17,7 @@ com\castilho\paranavai\armario\visao\EfetuarEmprestimoGUI.class
 com\castilho\paranavai\armario\visao\EditorPrincipalGUI$4.class
 com\castilho\paranavai\armario\visao\MenuAlunoGUI$1.class
 com\castilho\paranavai\armario\controle\EditorPrincipalControladorGUI.class
+com\castilho\paranavai\armario\servico\LocalizacaoServico.class
 com\castilho\paranavai\armario\visao\EditorPrincipalGUI.class
 com\castilho\paranavai\armario\visao\EditorLoginAlunoGUI$2.class
 com\castilho\paranavai\armario\utils\FundoTelaOld.class
@@ -34,9 +36,12 @@ com\castilho\paranavai\armario\visao\MenuAlunoGUI$7.class
 com\castilho\paranavai\armario\visao\EditorLoginAdminGUI.class
 com\castilho\paranavai\armario\controle\MenuAdminControladorGUI.class
 com\castilho\paranavai\armario\utils\FundoTelaNew.class
+com\castilho\paranavai\armario\dao\LocalizacaoDao.class
 com\castilho\paranavai\armario\visao\EditorLoginAlunoGUI.class
 com\castilho\paranavai\armario\controle\EditorLoginAlunoControladorGUI.class
 com\castilho\paranavai\armario\visao\EditorLoginAlunoGUI$3.class
+com\castilho\paranavai\armario\conexao\HibernateUtil.class
+com\castilho\paranavai\armario\dao\LocalizacaoDaoImpl.class
 com\castilho\paranavai\armario\controle\EfetuarDevolucaoControladorGUI.class
 com\castilho\paranavai\armario\servico\LoginServico.class
 com\castilho\paranavai\armario\visao\EfetuarDevolucaoGUI$2.class
@@ -58,6 +63,7 @@ com\castilho\paranavai\armario\visao\IndexGUI$2.class
 com\castilho\paranavai\armario\modelo\Bibliotecario.class
 com\castilho\paranavai\armario\visao\EditorPrincipalGUI$3.class
 com\castilho\paranavai\armario\controle\EditorLoginAdminControladorGUI.class
+com\castilho\paranavai\armario\modelo\Localizacao.class
 com\castilho\paranavai\armario\visao\EfetuarEmprestimoGUI$1.class
 com\castilho\paranavai\armario\utils\FundoTelaOld$NewContentPane.class
 com\castilho\paranavai\armario\visao\AvisoSairGUI$2.class

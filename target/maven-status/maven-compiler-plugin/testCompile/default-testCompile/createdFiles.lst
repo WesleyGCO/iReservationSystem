@@ -1,1 +1,3 @@
-com\castilho\teste\login\TestaLogin.class
+com\castilho\teste\login\TesteLogin.class
+com\castilho\teste\conexao\TesteHibernate.class
+com\castilho\teste\servico\LocalizacaoServicoTeste.class

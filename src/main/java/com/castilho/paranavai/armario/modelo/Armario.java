@@ -42,4 +42,38 @@ public class Armario {
         this.ativo = ativo;
         this.observacoes = observacoes;
     }
+
+    public Integer getArmarioId() {
+        return armarioId;
+    }
+
+    public void setArmarioId(Integer armarioId) {
+        this.armarioId = armarioId;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    public String getObservacoes() {
+        return observacoes;
+    }
+
+    public void setObservacoes(String observacoes) {
+        this.observacoes = observacoes;
+    }
+    
+    
 }

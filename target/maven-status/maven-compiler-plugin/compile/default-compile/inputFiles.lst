@@ -1,3 +1,5 @@
+C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\servico\LocalizacaoServico.java
+C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\dao\LocalizacaoDaoImpl.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\EditorLoginAlunoControladorGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\visao\EditorPrincipalGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\visao\EfetuarEmprestimoGUI.java
@@ -10,14 +12,18 @@ C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\j
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\EfetuarEmprestimoControladorGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\EfetuarDevolucaoControladorGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\visao\MenuAdminGUI.java
+C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\SingletonControlador.java
+C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\modelo\Localizacao.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\EditorPrincipalControladorGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\visao\IndexGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\modelo\Estudante.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\servico\LoginServico.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\modelo\Bibliotecario.java
+C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\conexao\HibernateUtil.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\modelo\Armario.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\visao\EfetuarDevolucaoGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\utils\FundoTelaNew.java
+C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\dao\LocalizacaoDao.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\IndexControladorGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\EditorLoginAdminControladorGUI.java
 C:\Users\User\Documents\Projeto\iReservationSystem\iReservationSystem\src\main\java\com\castilho\paranavai\armario\controle\MenuAlunoControladorGUI.java
