@@ -18,7 +18,7 @@ public class TesteHibernate {
     public static void main(String[] args) {
         Session sessao = HibernateUtil.getSession();
         sessao.beginTransaction();
-        Localizacao local = new Localizacao("Biblioteca");
+        Localizacao local = new Localizacao("Teto");
         sessao.save(local);
         sessao.getTransaction().commit();
         HibernateUtil.encerraSession();
