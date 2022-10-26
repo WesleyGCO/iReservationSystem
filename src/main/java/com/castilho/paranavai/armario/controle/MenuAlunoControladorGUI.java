@@ -34,4 +34,5 @@ public class MenuAlunoControladorGUI {
         EfetuarDevolucaoGUI abrirDevolucao = new EfetuarDevolucaoGUI();
         abrirDevolucao.setVisible(true);
     }
+    
 }

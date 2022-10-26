@@ -6,6 +6,7 @@ package com.castilho.teste.servico;
 
 import com.castilho.paranavai.armario.modelo.Estudante;
 import com.castilho.paranavai.armario.servico.EstudanteServico;
+import java.util.Date;
 
 /**
  *
@@ -13,7 +14,9 @@ import com.castilho.paranavai.armario.servico.EstudanteServico;
  */
 public class EstudanteServicoTeste {
         public static void main(String[] args) {
-            Estudante local = new Estudante();
-            EstudanteServico.inserir(local);
+            Estudante estudante1 = new Estudante("0000000000000001", "Leonardo Cantor", "user@user.br", "4499999999", "12345678", true, new Date(), new Date());
+            Estudante estudante2 = new Estudante("0000000000000002", "Leonardo Cantor Junior", "user2@user.br", "448888888888", "1234", true, new Date(), new Date());
+            EstudanteServico.inserir(estudante1);
+            EstudanteServico.inserir(estudante2);
         }
 }

@@ -69,6 +69,29 @@
                 <Property name="text" type="java.lang.String" value="Cadastrar arm&#xe1;rio"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="adminListarAluno">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listar alunos "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adminListarAlunoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="adminListarBibliotecario">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listar bibliotec&#xe1;rios"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="adminListarArmario">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listar arm&#xe1;rios"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="adminListarReserva">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listar reservas"/>
+              </Properties>
+            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>

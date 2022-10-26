@@ -44,7 +44,7 @@
     <property name="java.class.path" value="C:\Program Files\NetBeans-13\netbeans\java\maven\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-13\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-13\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 install"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-16.0.1"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -59,10 +59,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.castilho.teste.login.TesteLogin" name="emailAdminInvalido" time="0.01"/>
+  <testcase classname="com.castilho.teste.login.TesteLogin" name="emailAdminInvalido" time="0.011"/>
   <testcase classname="com.castilho.teste.login.TesteLogin" name="emailAlunoInvalido" time="0"/>
   <testcase classname="com.castilho.teste.login.TesteLogin" name="senhaAdminInvalida" time="0"/>
-  <testcase classname="com.castilho.teste.login.TesteLogin" name="autenticacaoAdminOk" time="0.001"/>
+  <testcase classname="com.castilho.teste.login.TesteLogin" name="autenticacaoAdminOk" time="0"/>
   <testcase classname="com.castilho.teste.login.TesteLogin" name="autenticacaoAlunoOk" time="0"/>
   <testcase classname="com.castilho.teste.login.TesteLogin" name="senhaAlunoInvalida" time="0"/>
 </testsuite>

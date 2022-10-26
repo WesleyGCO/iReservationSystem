@@ -57,6 +57,10 @@ public class MenuAdminGUI extends javax.swing.JFrame {
         adminCadastroImportacao = new javax.swing.JMenuItem();
         adminCadastroAluno = new javax.swing.JMenuItem();
         adminCadastroArmario = new javax.swing.JMenuItem();
+        adminListarAluno = new javax.swing.JMenuItem();
+        adminListarBibliotecario = new javax.swing.JMenuItem();
+        adminListarArmario = new javax.swing.JMenuItem();
+        adminListarReserva = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -115,6 +119,23 @@ public class MenuAdminGUI extends javax.swing.JFrame {
         adminCadastroArmario.setText("Cadastrar armário");
         adminCadastro.add(adminCadastroArmario);
 
+        adminListarAluno.setText("Listar alunos ");
+        adminListarAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminListarAlunoActionPerformed(evt);
+            }
+        });
+        adminCadastro.add(adminListarAluno);
+
+        adminListarBibliotecario.setText("Listar bibliotecários");
+        adminCadastro.add(adminListarBibliotecario);
+
+        adminListarArmario.setText("Listar armários");
+        adminCadastro.add(adminListarArmario);
+
+        adminListarReserva.setText("Listar reservas");
+        adminCadastro.add(adminListarReserva);
+
         adminBarraMenu.add(adminCadastro);
 
         setJMenuBar(adminBarraMenu);
@@ -142,6 +163,10 @@ public class MenuAdminGUI extends javax.swing.JFrame {
     private void adminRelatoriosArmariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminRelatoriosArmariosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_adminRelatoriosArmariosActionPerformed
+
+    private void adminListarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminListarAlunoActionPerformed
+        this.controlador.navegarParaListarAluno();
+    }//GEN-LAST:event_adminListarAlunoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,6 +209,10 @@ public class MenuAdminGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem adminCadastroAluno;
     private javax.swing.JMenuItem adminCadastroArmario;
     private javax.swing.JMenuItem adminCadastroImportacao;
+    private javax.swing.JMenuItem adminListarAluno;
+    private javax.swing.JMenuItem adminListarArmario;
+    private javax.swing.JMenuItem adminListarBibliotecario;
+    private javax.swing.JMenuItem adminListarReserva;
     private javax.swing.JMenu adminMenuMinhaConta;
     private javax.swing.JMenu adminMenuRelatorios;
     private javax.swing.JMenuItem adminMinhaContaMeusDados;

@@ -5,6 +5,7 @@
 package com.castilho.paranavai.armario.controle;
 
 import com.castilho.paranavai.armario.visao.EditorLoginAdminGUI;
+import com.castilho.paranavai.armario.visao.ListagemEstudanteGUI;
 import com.castilho.paranavai.armario.visao.MenuAdminGUI;
 
 /**
@@ -21,5 +22,10 @@ public class MenuAdminControladorGUI {
     public void navegarParaLoginAdmin(){
         EditorLoginAdminGUI abrirLoginAdmin = new EditorLoginAdminGUI();
         abrirLoginAdmin.setVisible(true);
+    }
+    
+    public void navegarParaListarAluno(){
+        ListagemEstudanteGUI abrirListagemAluno = new ListagemEstudanteGUI();
+        abrirListagemAluno.setVisible(true);
     }
 }
