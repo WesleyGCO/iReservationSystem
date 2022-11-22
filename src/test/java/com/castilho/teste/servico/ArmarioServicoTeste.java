@@ -13,7 +13,11 @@ import com.castilho.paranavai.armario.servico.ArmarioServico;
  */
 public class ArmarioServicoTeste {
         public static void main(String[] args) {
-            Armario local = new Armario("1", true, "armario pequeno");
-            ArmarioServico.inserir(local);
+            Armario armario1 = new Armario("1", true, "armario pequeno");
+            Armario armario2 = new Armario("2", true, "armario grande");
+            Armario armario3 = new Armario("3", false, "armario médio");
+            ArmarioServico.inserir(armario1);
+            ArmarioServico.inserir(armario2);
+            ArmarioServico.inserir(armario3);
         }
 }

@@ -4,17 +4,26 @@
  */
 package com.castilho.paranavai.armario.visao;
 
+import com.castilho.paranavai.armario.controle.ArmarioControlador;
+import com.castilho.paranavai.armario.modelo.Armario;
+import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
+import java.util.List;
+
 /**
  *
  * @author Wesley
  */
 public class ListagemArmarioGUI extends javax.swing.JFrame {
 
+    List<Armario> listaArmario = ArmarioControlador.listarTodosArmarios();
+    
     /**
      * Creates new form ListagemArmarioGUI
      */
     public ListagemArmarioGUI() {
         initComponents();
+        populaCorretoArmario(listaArmario);
     }
 
     /**
@@ -28,16 +37,17 @@ public class ListagemArmarioGUI extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tabelaArmario = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         Numeracao = new javax.swing.JLabel();
         txtListagemNumeracao = new javax.swing.JTextField();
+        btnBuscarNumeracao = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(new java.awt.BorderLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tabelaArmario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -45,14 +55,29 @@ public class ListagemArmarioGUI extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Código", "Número", "Observações", "Ativo"
             }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tabelaArmario);
 
         jPanel2.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         Numeracao.setText("Numeração");
+
+        btnBuscarNumeracao.setText("Buscar");
+        btnBuscarNumeracao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarNumeracaoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -64,6 +89,10 @@ public class ListagemArmarioGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(txtListagemNumeracao, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(39, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnBuscarNumeracao)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -72,7 +101,9 @@ public class ListagemArmarioGUI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Numeracao)
                     .addComponent(txtListagemNumeracao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnBuscarNumeracao)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel2.add(jPanel1, java.awt.BorderLayout.PAGE_START);
@@ -81,6 +112,17 @@ public class ListagemArmarioGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBuscarNumeracaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarNumeracaoActionPerformed
+        List<Armario> listaAtualizada = new ArrayList<>();
+        
+        for(int i = 0; i < this.listaArmario.size(); i++){
+            if(this.listaArmario.get(i).getNumero().contains(txtListagemNumeracao.getText())){
+                listaAtualizada.add(this.listaArmario.get(i));
+            }
+            this.populaCorretoArmario(listaAtualizada);
+        }
+    }//GEN-LAST:event_btnBuscarNumeracaoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,13 +158,31 @@ public class ListagemArmarioGUI extends javax.swing.JFrame {
             }
         });
     }
+    
+    private void populaCorretoArmario(List<Armario> lista){
+        DefaultTableModel modeloTabelaArmario = (DefaultTableModel) tabelaArmario.getModel();
+        
+        while (modeloTabelaArmario.getRowCount() != 0){
+            modeloTabelaArmario.removeRow(0);
+        }
+        
+        for (Armario armario : lista){
+            Object[] dadosLinha = new Object[4];
+            dadosLinha [0] = armario.getArmarioId();
+            dadosLinha [1] = armario.getNumero();
+            dadosLinha [2] = armario.getObservacoes();
+            dadosLinha [3] = armario.isAtivo();
+            modeloTabelaArmario.addRow(dadosLinha);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Numeracao;
+    private javax.swing.JButton btnBuscarNumeracao;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tabelaArmario;
     private javax.swing.JTextField txtListagemNumeracao;
     // End of variables declaration//GEN-END:variables
 }
